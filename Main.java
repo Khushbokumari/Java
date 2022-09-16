@@ -1,15 +1,28 @@
 import java.util.Scanner;
-class Main
-{
-    public static void main(String args[])
+import java.util.StringTokenizer;
+
+public class Main {
+    public static void main(String[] args)
     {
-        Scanner sc=new
-        Scanner(System.in);
-        int n=sc.nextInt();
-        for(int i=1;i<n;i++)
+        Scanner sc =new Scanner(System.in);
+        String a=sc.nextLine();
+        StringTokenizer b=new StringTokenizer(a);
+        StringBuffer r=new StringBuffer();
+        while(b.hasMoreTokens())
         {
-            if(n%i==0)
-            System.out.print("i");
+            String a1=b.nextToken();
+            if(a1=="")
+            {
+                r.append(a1);
+                continue;
+
+            }
+            StringBuffer b1=new StringBuffer(a1);
+            b1.reverse();
+            r.append(b1);
         }
+        r.reverse();
+        System.out.println(r);
     }
+    
 }

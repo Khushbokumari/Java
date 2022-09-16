@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
- class Lr {
-    public static void main(String...s) {
+public class Lr {
+    public static void main(String[] args) {
         int a,b,c,large,temp;
         Scanner sc=new Scanner(System.in);
         System.out.println("enter 1st no");

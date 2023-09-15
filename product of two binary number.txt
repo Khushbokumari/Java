@@ -1,0 +1,27 @@
+//product of two binary number
+import java.util.Scanner;
+ import java.io.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int x=sc.nextInt();
+	    int y=sc.nextInt();
+//convert decimal number to binary 
+	    String a=Integer.toBinaryString(x);
+	    String b=Integer.toBinaryString(y);
+//convert binary number to decimal
+	    int d = Integer.parseInt(a, 2);
+        int e = Integer.parseInt(b, 2);
+	    int z=d * e;
+	    System.out.println(z);//decimal num
+	    //convert decimal num to binary
+	    String m=Integer.toBinaryString(z);//binary num 
+	    
+	   
+	    System.out.println(m);
+	
+        
+
+	}
+}
